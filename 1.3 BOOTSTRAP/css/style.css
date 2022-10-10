@@ -74,15 +74,10 @@ th {
     font-weight: bold;
 }
 
-
-/*##########################################*/
-/*###########       TODO    ################*/
-/*##########################################*/
-/*1. Alle Überschriften sollen in Farbe #0071BD dargestellt werden */
-
-
-/*2. Das Logo soll rechtsbündig dargestellt werden und auf Höhe der Navigations-Links sein. */
-
-
-/*3. Die folgenden Klassen (abgelehnt/gestattet) sind anzulegen und sollen zur Formatierung des Ergebnisses verwendet werden.
-  abgelehnt ist rot und gestattet grün*/
+.image {
+    background-repeat: no-repeat;
+    float:right
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #0071BD;
+}
