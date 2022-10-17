@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +73,7 @@
     </tr>
     <tr>
         <td>99</td>
-        <td>202x-02-13 17:52:12</td>
+        <td>2022-02-13 17:52:12</td>
         <td>3</td>
         <td>Schmidt</td>
         <td>Eingang Lager</td>
@@ -78,7 +81,7 @@
     </tr>
     <tr>
         <td>100</td>
-        <td>202x-02-13 17:52:25</td>
+        <td>2022-02-13 17:52:25</td>
         <td>3</td>
         <td>Schmidt</td>
         <td>Eingang Lager</td>
@@ -86,7 +89,7 @@
     </tr>
     <tr>
         <td>101</td>
-        <td>202x-02-14 07:11:20</td>
+        <td>2022-02-14 07:11:20</td>
         <td>1</td>
         <td>Nettmann</td>
         <td>Eingang Büro</td>
@@ -110,7 +113,7 @@
     </ul>
 </div>
 <h2 id="contact">Mietwagen:</h2>
-<form action="MietwagenBeleg.php" method="post">
+<form action="MietwagenForm.php" method="post">
     <p>Kundennummer:</p>
     <input type="text" name="txtKNr"><br>
     <fieldset>

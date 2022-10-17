@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +20,17 @@
         <th>Abholort</th>
     </tr>
     <?php
-    if (isset($_POST) && ['txtKNr'] !== null) {
-        echo "<td>", $_POST['txtKNr'], "</td>";
+    if (isset($_SESSION) && ['txtKNr'] !== null) {
+        echo "<td>", $_SESSION['txtKNr'], "</td>";
 
     }
-    echo "<td>", $_POST['zahlmethode'], "</td>";
+    echo "<td>", $_SESSION['zahlmethode'], "</td>";
     echo "<td>";
-    foreach ($_POST['zusatzausstattung'] as $extras) {
+    foreach ($_SESSION['zusatzausstattung'] as $extras) {
         echo $extras, ", ";
     }
     echo "</td>";
-     echo "<td>", $_POST['abholort'], "</td>";
+     echo "<td>", $_SESSION['abholort'], "</td>";
     ?>
 </table>
 <?php
