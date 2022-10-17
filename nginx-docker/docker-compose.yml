@@ -8,3 +8,4 @@ services:
       - 80:80
     volumes:
       - ./src:/usr/share/nginx/html
+      - ./site.conf:/etc/nginx/conf.d/site.conf
